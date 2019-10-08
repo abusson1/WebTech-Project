@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+    <ul class="nav">
+        <li> <a href="index.htm"> Home</a> </li>
+        <li> <a href="properties.htm">Our Properties</a> </li>
+        <li> <a href="sitemap.htm"> Sitemap </a> </li>
+        <li> <a class= "active" href="contact.htm"> Contact Us </a> </li>
+    </ul>
+
+    <h1>
+        Contact Us
+    </h1>
+
+    <p>
+        Head office: 66 Tappan Street, Providence, RI, 02908. <br>
+        Phone Number: +1 (401) 745-2180<br>
+        Email: info@dahliareal.com<br>
+    </p>
+
+    <p>
+        <img src="Images/headoffice.jpeg" atl="Head Office" title="Head Office">
+    </p>
+
+    <p>
+        Please fill out this form, and we will reach out to you as soon as possible. Thank you.
+        <form method="POST" action="mailto:info@dahliareal.com">
+            Name:
+            <input type="text" name="Name" size="30" maxlength="40" required
+                placeholder="Please enter your full name" /> <br>
+            Company (leave blank if none):
+            <input type="text" name="Company" size="30" maxlength="50"
+                placeholder="Please enter your company name" /><br>
+            Phone Number:
+            <input type="tel" name="Phone" size="30" maxlength="12" pattern="[0-9]{10}" required
+                placeholder="Please enter your phone number" /> <br>
+            Subject:
+            <input type="text" name="Subject" size="30" maxlength="50"
+                placeholder="Please briefly summarise your query" /><br>
+
+            Query:
+            <textarea name="comment" rows="5" cols="40" required placeholder="How can we help?"> </textarea> <br>
+
+            <Button type="submit"> <img src="images/mailbox.png" title="Submit" alt="Submit"></Button>
+            <Button type="reset"> <img src="images/reset.png" title="Clear" alt="Clear"></Button>
+        </form>
+    </p>
+
+</body>
+
+</html>
