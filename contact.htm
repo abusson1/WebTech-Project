@@ -16,6 +16,7 @@
         <li> <a href="sitemap.htm"> Sitemap </a> </li>
         <li> <a class= "active" href="contact.htm"> Contact Us </a> </li>
     </ul>
+    <!-- navbar -->
 
     <h1>
         Contact Us
@@ -26,10 +27,12 @@
         Phone Number: +1 (401) 745-2180<br>
         Email: info@dahliareal.com<br>
     </p>
+    <!-- contact details of dahlia holdings -->
 
     <p>
-        <img src="Images/headoffice.jpeg" atl="Head Office" title="Head Office">
+        <img src="images/headoffice.jpeg" alt="Head Office" title="Head Office">
     </p>
+    <!-- map showing where the head office of the company is -->
 
     <p>
         Please fill out this form, and we will reach out to you as soon as possible. Thank you.
@@ -37,22 +40,29 @@
             Name:
             <input type="text" name="Name" size="30" maxlength="40" required
                 placeholder="Please enter your full name" /> <br>
+                <!-- name input -->
             Company (leave blank if none):
             <input type="text" name="Company" size="30" maxlength="50"
                 placeholder="Please enter your company name" /><br>
+                <!-- company name input (not required) -->
             Phone Number:
             <input type="tel" name="Phone" size="30" maxlength="12" pattern="[0-9]{10}" required
                 placeholder="Please enter your phone number" /> <br>
+                <!-- phone input that ensure the phone number is correct format and length -->
             Subject:
             <input type="text" name="Subject" size="30" maxlength="50"
                 placeholder="Please briefly summarise your query" /><br>
+                <!-- subject input -->
 
             Query:
             <textarea name="comment" rows="5" cols="40" required placeholder="How can we help?"> </textarea> <br>
+            <!-- actual query input -->
 
             <Button type="submit"> <img src="images/mailbox.png" title="Submit" alt="Submit"></Button>
             <Button type="reset"> <img src="images/reset.png" title="Clear" alt="Clear"></Button>
+            <!-- buttons to submit form/clear form -->
         </form>
+        
     </p>
 
 </body>
