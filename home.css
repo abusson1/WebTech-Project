@@ -1,0 +1,80 @@
+body{
+    margin: 0;
+}
+
+li.nav{
+    display: inline-block;
+}
+
+ul.nav{
+    text-align: right;
+    
+}
+
+table.navbar{
+    background-color: pink;
+    width: 100%;
+}
+
+tr.nav1{
+height: 90px;
+}
+
+td.next{
+    text-align: right;
+    padding-right: 250px;
+}
+
+td.log {
+    text-align: right;
+    width: 270px;
+}
+
+a{
+    color: rgb(222,82,113);
+    font-size: 18px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+a:hover{
+    background-color: rgb(222,82,113);
+    color: pink;
+}
+
+h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+h1.home{
+    text-align: left;
+    padding-left: 200px;
+    font-size: 15pt;
+    font-family: sans-serif;
+}
+
+h1.address{
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+p.overview{
+    text-align: center;
+    width: 70%;
+    margin: 10px auto;
+    font-family: sans-serif;
+    font-size: 15pt;
+}
+
+p.images{
+    text-align: center;
+}
+
+ul.info{
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}

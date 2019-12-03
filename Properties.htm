@@ -7,8 +7,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Our Properties</title>
     <style>
-        img{
-            width: 500px;
+        body {
+            margin: 0;
+        }
+
+        li.nav {
+            display: inline-block;
+        }
+
+        ul.nav {
+            text-align: right;
+
+        }
+
+        table.navbar {
+            background-color: pink;
+            width: 100%;
+        }
+
+        tr.nav1 {
+            height: 90px;
+        }
+
+        td.next {
+            text-align: right;
+            padding-right: 250px;
+        }
+
+        td.log {
+            text-align: right;
+            width: 270px;
+        }
+
+        a {
+            color: rgb(222, 82, 113);
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        a:hover {
+            background-color: rgb(222, 82, 113);
+            color: pink;
+        }
+
+        table.props {
+            text-align: center;
+            margin: auto;
+        }
+
+        h1 {
+            text-align: left;
+            padding-left: 165px;
+            font-size: 15pt;
+            font-family: sans-serif;
+        }
+
+        tr{
+            margin: 30px;
         }
     </style>
 
@@ -16,12 +73,21 @@
 
 <body>
     <nav>
-        <ul class="nav">
-            <li> <a href="index.htm"> Home</a> </li>
-            <li> <a class="active" href="properties.htm">Our Properties</a> </li>
-            <li> <a href="sitemap.htm"> Sitemap </a> </li>
-            <li> <a href="contact.htm"> Contact Us </a> </li>
-        </ul>
+        <table class="navbar">
+            <tr class="nav1">
+                <td class="log">
+                    <img src="images/logo.png" alt="logo" title="logo" height="70px">
+                </td>
+                <td class="next">
+                    <ul>
+                        <li class="nav"> <a href="index.htm"> Home</a> </li>
+                        <li class="nav"> <a href="properties.htm">Our Properties</a> </li>
+                        <li class="nav"> <a href="sitemap.htm"> Sitemap </a> </li>
+                        <li class="nav"> <a href="contact.htm"> Contact Us </a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
         <!-- navbar -->
     </nav>
 
@@ -32,19 +98,32 @@
     </header>
 
     <main>
-        <table>
+        <table class="props">
 
             <tr>
-                <td> <a href="home1.htm"><img src="images/home-1/1.png" title="Home1" alt="Home1"> Home 1</td>
-                <td> <a href="home2.htm"><img src="images/home-2/1.png" title="Home2" alt="Home2"> Home 2</td>
+                <td> <a href="home1.htm"><img src="images/home-1/1.png" title="Home1" alt="Home1" width="500px"> <br>
+                </td>
+                <td> <a href="home2.htm"><img src="images/home-2/1.png" title="Home2" alt="Home2" width="500px"> <br>
+                </td>
+            </tr>
+            <tr>
+                <td> <a href="home1.htm"> Home 1 </a></td>
+                <td> <a href="home2.htm"> Home 2 </a></td>
             </tr>
 
             <tr>
-                <td> <a href="home3.htm"><img src="images/home-3/1.png" title="Home3" alt="Home3"> Home 3</td>
-                <td> <a href="home4.htm"><img src="images/home-4/1.png" title="Home4" alt="Home4"> Home 4</td>
+                <td> <a href="home3.htm"><img src="images/home-3/1.png" title="Home3" alt="Home3" width="500px"> <br>
+                </td>
+                <td> <a href="home4.htm"><img src="images/home-4/1.png" title="Home4" alt="Home4" width="500px"> <br>
+                </td>
             </tr>
 
-            <!-- table containg images (which are links) of the four properties -->
+            <tr>
+                <td> <a href="home3.htm"> Home 3 </a></td>
+                <td> <a href="home4.htm"> Home 4 </a></td>
+            </tr>
+
+            <!-- table containing images (which are links) of the four properties -->
 
         </table>
     </main>

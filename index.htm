@@ -7,31 +7,108 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dahlia Holdings</title>
     <style>
-        #logo {
-            width: 200px;
+        body {
+            margin: 0;
         }
 
-        #imgmap{
-            width: 600px;
+        li.nav {
+            display: inline-block;
         }
+
+        ul.nav {
+            text-align: right;
+
+        }
+
+        table.navbar {
+            background-color: pink;
+            width: 100%;
+        }
+
+        tr.nav1 {
+            height: 90px;
+        }
+
+        td.next {
+            text-align: right;
+            padding-right: 250px;
+        }
+
+        td.log {
+            text-align: right;
+            width: 270px;
+        }
+
+        a {
+            color: rgb(222, 82, 113);
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        a:hover {
+            background-color: rgb(222, 82, 113);
+            color: pink;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 25pt;
+            font-family: sans-serif;
+        }
+
+        p {
+            text-align: center;
+            width: 70%;
+            margin: 10px auto;
+            font-family: sans-serif;
+            font-size: 15pt;
+        }
+
+        h2{
+            text-align: center;
+        }
+
+        map, .pmap{
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+        }
+
     </style>
 </head>
 
 <body>
 
     <nav>
-        <ul class="nav">
-            <li> <a class="active" href="index.htm"> Home</a> </li>
-            <li> <a href="properties.htm">Our Properties</a> </li>
-            <li> <a href="sitemap.htm"> Sitemap </a> </li>
-            <li> <a href="contact.htm"> Contact Us </a> </li>
-        </ul>
+        <table class="navbar">
+            <tr class="nav1">
+                <td class="log">
+                    <img src="images/logo.png" alt="logo" title="logo" height="70px">
+                </td>
+                <td class="next">
+                    <ul>
+                        <li class="nav"> <a href="index.htm"> Home</a> </li>
+                        <li class="nav"> <a href="properties.htm">Our Properties</a> </li>
+                        <li class="nav"> <a href="sitemap.htm"> Sitemap </a> </li>
+                        <li class="nav"> <a href="contact.htm"> Contact Us </a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
         <!-- navbar -->
     </nav>
+    <br>
+    <audio controls loop autoplay>
+            <source src="images/river.mp3" type="audio/mp3">
+        </audio>
+        <!-- loading the rushing water noise -->
 
     <header>
         <h1>
-            Dahlia Holdings <img class= "logo" src="images/logo.jpg" title="Dahlia Holdings" alt="Dahlia Logo">
+            Dahlia Holdings
         </h1>
         <!-- company name and logo -->
     </header>
@@ -40,7 +117,7 @@
         <p>
             Dahlia holdings is a real estate investment holding company. The firm invests in residential properties in
             Rhode Island and Massachusetts. These properties range from two to four bedrooms, and are located in various
-            residential buildings. <br> Dahlia Holdings targets apartments with deferred maintenance and typically
+            residential buildings. Dahlia Holdings targets apartments with deferred maintenance and typically
             rennovates units to increase rental income, as well as resale value. We have a long term investment horizon
             with long-term oriented sharehodlers with the goal of increasing cashflow over time.
         </p>
@@ -61,15 +138,11 @@
         </map>
         <!-- map for the map showing the location of properties -->
 
-        <img class="imgmap" src="images/provmap.jpeg" usemap="#prov" title="Providence" alt="Map of Prvidence"> <br>
+        <img class="pmap" src="images/provmap.jpeg" usemap="#prov" title="Providence" alt="Map of Providence"> <br>
         <!-- loading the image showing the property locations -->
 
     </article>
 
-    <audio controls loop autoplay>
-        <source src="images/river.mp3" type="audio/mp3">
-    </audio>
-    <!-- loading the rushing water noise -->
 
 </body>
 
