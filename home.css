@@ -78,3 +78,16 @@ ul.info{
     margin-left: auto;
     margin-right: auto;
 }
+
+div {
+    display: inline-block;
+}
+
+div.all{
+    text-align: center;
+}
+
+div.inner{
+    text-align: top;
+
+}
