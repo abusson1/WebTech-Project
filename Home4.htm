@@ -5,99 +5,249 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home 4</title>
+    <meta name="keywords"
+        content="dahlia real; real estate; apartments in providence; holding company; rent; apartment rentals; apartment for rent; living; university student; providence; student; off campus housing; off campus; investment; holding company; real estate investment holding company">
+    <meta name="description"
+        content="Dahlia holdings is a real estate investment holding company. The firm invests in residential properties in Rhode Island and Massachusetts.">
+    <title>Home FOUR</title>
 
     <style>
-        img {
+        #img {
             width: 500px;
         }
+
+        p.images {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        li.nav {
+            display: inline-block;
+        }
+
+        ul.nav {
+            text-align: right;
+
+        }
+
+        table.navbar {
+            background-color: pink;
+            width: 100%;
+        }
+
+        tr.nav1 {
+            height: 90px;
+        }
+
+        td.next {
+            text-align: right;
+            padding-right: 250px;
+        }
+
+        td.log {
+            text-align: right;
+            width: 270px;
+        }
+
+        a {
+            color: rgb(222, 82, 113);
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        a:hover {
+            background-color: rgb(222, 82, 113);
+            color: pink;
+        }
+
+        h1.home {
+            text-align: left;
+            padding-left: 200px;
+            font-size: 15pt;
+            font-family: sans-serif;
+        }
+
+        h1.address {
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        p.overview,
+        p.moreInfo {
+            text-align: center;
+            width: 60%;
+            margin: 10px auto;
+            font-family: sans-serif;
+            font-size: 15pt;
+            text-decoration: none;
+        }
+
+        .vid {
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            display: block;
+        }
+
+        table.info {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .c1,
+        .c2,
+        .c3 {
+            width: 450px;
+            font-family: sans-serif;
+        }
+
+        /* h3 {
+            text-align: center;
+            width: 60%;
+            margin: 10px auto;
+            font-family: sans-serif;
+            font-size: 15pt;
+        } */
     </style>
+
+    <script>
+
+        const pics = ["images/home-4/o3.jpeg", "images/home-4/o2.jpeg", "images/home-4/o1.jpeg", "images/home-4/1.png"];
+        let i = 0;
+
+        function slideShow() {
+            let homeImage = document.getElementById("img");
+            if (i == pics.length) {
+                i = 0;
+            }
+
+            homeImage.src = pics[i];
+            i++;
+            setTimeout("slideShow()", 1500);
+
+        }
+
+
+    </script>
+
 </head>
 
-<body>
+<body onload="slideShow()">
 
     <nav>
-        <ul class="nav">
-            <li> <a href="index.htm"> Home</a> </li>
-            <li> <a class="active" href="properties.htm">Our Properties</a> </li>
-            <li> <a href="sitemap.htm"> Sitemap </a> </li>
-            <li> <a href="contact.htm"> Contact Us </a> </li>
-        </ul>
+        <table class="navbar">
+            <tr class="nav1">
+                <td class="log">
+                    <img src="images/logo.png" alt="logo" title="logo" height="70px">
+                </td>
+                <td class="next">
+                    <ul>
+                        <li class="nav"> <a href="index.htm"> Home</a> </li>
+                        <li class="nav"> <a href="properties.htm">Our Properties</a> </li>
+                        <li class="nav"> <a href="sitemap.htm"> Sitemap </a> </li>
+                        <li class="nav"> <a href="contact.htm"> Contact Us </a> </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
         <!-- navbar -->
     </nav>
 
+
     <header>
-        <h1>
-            Home 4 - 47 Williams Street, Providence, RI, 02906.
+        <h1 class="home">
+            Home 4
+        </h1>
+        <h1 class="address">
+            47 Williams Street, Providence, RI, 02906.
         </h1>
     </header>
 
     <main>
         <article>
-            <h2>
+            <p class="overview">
                 Property Overview - Our newest home. We are expecting to accept rentors from 1st September 2019. This
                 apartment is
                 currently undergoing a full renovation. Once completed, the unit will provide a gorgeous living space on
                 the 2nd
-                floor with views of Brown University.
-            </h2>
+                floor with views of Brown University. The video below shows the actual unit while under renovation.
+                <br><br>
+            </p>
             <!-- property overview -->
 
-            <p>
-                <table>
-                    <tr>
-                        <td>
-                            <video controls>
-                                <source src="images/home-4/tour.mp4">
-                            </video>
-                        </td>
-                    </tr>
-                </table>
-            </p>
+
+            <video class="vid" controls>
+                <source src="images/home-4/tour.mp4">
+            </video>
+
             <!-- video showing the current state of the unit -->
 
-            <ul>
-                <li> Unit Details</li>
-                <li> 1600 square feet </li>
-                <li> 3 bedroom </li>
-                <li> 1 bathroom </li>
-            </ul>
-            <!-- list giving details on the unit -->
-
-            <ul>
-                <li> Amenities</li>
-                <li> Diswasher </li>
-                <li> Tiled Bathroom Floor </li>
-                <li> Off Street Parking </li>
-                <li> In Home Washer/Dryer</li>
-                <li> Central Aircondition</li>
-                <li> Brand New Appliances</li>
-            </ul>
-            <!-- list giving the ameneties of the unit -->
-
-            <ul>
-                <li> Financials </li>
-                <li> Rent: $1500/month </li>
-                <li> Estimated Utility: $120/month </li>
-            </ul>
-            <!-- list giving financial information -->
-
-    </main>
-    <aside>
-        <p>
-            <table>
-                <h3>
-                    Here are photographs of a similar unit we have recently finished. We plan on this home looking very
-                    similar to the one pictured below:
-                </h3>
+            <br> <br>
+            <table class="info">
                 <tr>
-                    <td><img src="images/home-4/o3.jpeg" title="img1" alt="img1"></td>
-                    <td><img src="images/home-4/o2.jpeg" title="img2" alt="img2"></td>
-                    <td><img src="images/home-4/o1.jpeg" title="img3" alt="img3"> </td>
+                    <th class="c1"> Unit Details </th>
+                    <th class="c1"> Amenities </th>
+                    <th class="c1"> Financials</th>
                 </tr>
+
+                <tr>
+                    <td class="c1"> 1,600 square feet</td>
+                    <td class="c1"> Dishwasher </td>
+                    <td class="c1"> Rent: $2,200/month </td>
+                </tr>
+
+                <tr>
+                    <td class="c1"> 3 bedroom </td>
+                    <td class="c1"> Tiled bathroom </td>
+                    <td class="c1"> Estimate Utility: $200/month </td>
+                </tr>
+
+                <tr>
+                    <td class="c1"> 1 bathroom </td>
+                    <td class="c1"> Off street parking </td>
+                    <td class="c1"> </td>
+                </tr>
+
+                <tr>
+                    <td class="c1"> </td>
+                    <td class="c1"> In home washer/dryer </td>
+                    <td class="c1"> </td>
+                </tr>
+
+                <tr>
+                    <td class="c1"> </td>
+                    <td class="c1"> Central A/C </td>
+                    <td class="c1"> </td>
+                </tr>
+
+                <tr>
+                    <td class="c1"> </td>
+                    <td class="c1"> Brand new appliances </td>
+                    <td class="c1"> </td>
+                </tr>
+
             </table>
+    </main>
+
+    <aside>
+
+        <p class="moreInfo">
+            <br><br><br>
+            Here are photographs of a similar unit we have recently finished. We plan <br> on this home looking very
+            similar to the one pictured below:
         </p>
-        <!-- table containing the images of similar completed rennovation -->
+
+        <p class="images">
+            <img id="img" src="images/home-4/o3.jpeg" title="img1" alt="img1">
+        </p>
+
+        <!-- table containing the images of similar completed renovation -->
     </aside>
     </article>
 
