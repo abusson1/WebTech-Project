@@ -5,11 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords" content="dahlia real; real estate; apartments in providence; holding company; rent; apartment rentals; apartment for rent; living; university student; providence; student; off campus housing; off campus; investment; holding company; real estate investment holding company">
-    <meta name="description" content="Dahlia holdings is a real estate investment holding company. The firm invests in residential properties in Rhode Island and Massachusetts.">
+    <meta name="keywords"
+        content="dahlia real; real estate; apartments in providence; holding company; rent; apartment rentals; apartment for rent; living; university student; providence; student; off campus housing; off campus; investment; holding company; real estate investment holding company">
+    <meta name="description"
+        content="Dahlia holdings is a real estate investment holding company. The firm invests in residential properties in Rhode Island and Massachusetts.">
     <title>Dahlia Holdings</title>
     <style>
-
         body {
             margin: 0;
         }
@@ -69,7 +70,7 @@
             font-size: 15pt;
         }
 
-        h2{
+        h2 {
             text-align: center;
         }
 
@@ -78,27 +79,44 @@
             margin-right: auto;
             display: block;
         }
-        /* to do: why doesnt the image map center with the image */
 
+        /* to do: why doesnt the image map center with the image */
     </style>
 
-    <script>
-        function rotate(){
-            
+
+    <script type="text/javascript">
+        function rotate() {
+            let logo = document.getElementById("logo");
+            let degrees = 0;
+            let incr = 1;
+            let id = setInterval(frame, 10, logo)
+
+            function frame() {
+                degrees += incr;
+                if (degrees >= 180) {
+                    incr = -1;
+                } else if (degrees <= -180) {
+                    incr = 1;
+                }
+
+                let angle = degrees.toString()
+                logo.setAttribute("style", "transform:rotate(" + angle + "deg)");
+            }
         }
-    
+        // javascript animating the logo to rotate
+
 
     </script>
 
 </head>
 
-<body>
+<body onload="rotate()">
 
     <nav>
         <table class="navbar">
             <tr class="nav1">
                 <td class="log">
-                    <img src="images/logo.png" alt="logo" title="logo" height="70px">
+                    <img id="logo" src="images/logo.png" alt="logo" title="logo" height="70px">
                 </td>
                 <td class="next">
                     <ul>
@@ -114,9 +132,9 @@
     </nav>
     <br>
     <audio controls loop>
-            <source src="images/river.mp3" type="audio/mp3">
-        </audio>
-        <!-- loading the rushing water noise -->
+        <source src="images/river.mp3" type="audio/mp3">
+    </audio>
+    <!-- loading the rushing water noise -->
 
     <header>
         <h1>
@@ -136,7 +154,7 @@
         <!-- company overview -->
 
         <h2>
-            AUM: 1.5M <br>
+            AUM: $1.5M <br>
             Total Apartments: 4 <br>
             Since: 2010 <br>
         </h2>

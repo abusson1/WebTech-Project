@@ -5,71 +5,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="keywords"
-        content="dahlia real; real estate; apartments in providence; holding company; rent; apartment rentals; apartment for rent; living; university student; providence; student; off campus housing; off campus; investment; holding company; real estate investment holding company">
-    <meta name="description"
-        content="Dahlia holdings is a real estate investment holding company. The firm invests in residential properties in Rhode Island and Massachusetts.">
     <title>Contact Us</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        li.nav {
+            display: inline-block;
+        }
+
+        ul.nav {
+            text-align: right;
+
+        }
+
+        table.navbar {
+            background-color: pink;
+            width: 100%;
+        }
+
+        tr.nav1 {
+            height: 90px;
+        }
+
+        td.next {
+            text-align: right;
+            padding-right: 250px;
+        }
+
+        td.log {
+            text-align: right;
+            width: 270px;
+        }
+
+        a {
+            color: rgb(222, 82, 113);
+            font-size: 18px;
+            font-family: sans-serif;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        a:hover {
+            background-color: rgb(222, 82, 113);
+            color: pink;
+        }
+
+        h1,
+        h2,
+        h3,
+        p,
+        .form {
+            margin: 20px;
+            padding-left: 170px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.11.1/jquery.validate.js"></script>
+    <script src="http://ajax.microsoft.com/ajax/jquery.validate/1.11.1/additional-methods.js"></script>
+    <script>
+        $(function ($) {
+            $("#myform").validate({
+                rules: {
+                    name: {
+                        required: true
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    phone: {
+                        required: true,
+                        phoneUS: true
+                    },
+                    subject: {
+                        required: true
+                    },
+                    comment: {
+                        required: true
+                    }
+                },
+                messages: {
+                    name: {
+                        required: "Please enter your name."
+                    },
+                    email: {
+                        required: "Please enter your email."
+                    },
+                    phone: {
+                        required: "Please enter your phone."
+                    },
+                    subject: {
+                        required: "Please enter a subject."
+                    },
+                    comment: {
+                        required: "Please enter the email body."
+                    }
+                }
+            });
+        });
+        // jquery that validates the form
+    </script>
+
+
 </head>
-<style>
-    body {
-        margin: 0;
-    }
-
-    li.nav {
-        display: inline-block;
-    }
-
-    ul.nav {
-        text-align: right;
-
-    }
-
-    table.navbar {
-        background-color: pink;
-        width: 100%;
-    }
-
-    tr.nav1 {
-        height: 90px;
-    }
-
-    td.next {
-        text-align: right;
-        padding-right: 250px;
-    }
-
-    td.log {
-        text-align: right;
-        width: 270px;
-    }
-
-    a {
-        color: rgb(222, 82, 113);
-        font-size: 18px;
-        font-family: sans-serif;
-        text-decoration: none;
-        padding: 10px 15px;
-    }
-
-    a:hover {
-        background-color: rgb(222, 82, 113);
-        color: pink;
-    }
-
-    h1,
-    h2,
-    h3,
-    p,
-    .form {
-        margin: 20px;
-        padding-left: 170px;
-    }
-
-    .center {
-        text-align: center;
-    }
-</style>
 
 <body>
     <nav>
@@ -118,42 +164,41 @@
         <section>
             <p class="center">
                 Please fill out this form, and we will reach out to you as soon as possible. Thank you.
-                <form class="form center" method="POST" action="mailto:info@dahliareal.com">
+                <form class="form center" id="myform" class="form" method="POST" action="mailto:info@dahliareal.com">
                     Name:
-                    <input type="text" name="Name" size="30" maxlength="40" required
-                        placeholder="Please enter your full name" /> <br>
-                    <!-- name input -->
+                    <input type="text" id="name" name="name" size="30" maxlength="40"
+                        placeholder="Please enter your full name" required /> <br>
+                    <!-- name input --> <br>
                     Company (leave blank if none):
                     <input type="text" name="Company" size="30" maxlength="50"
                         placeholder="Please enter your company name" /><br>
-                    <!-- company name input (not required) -->
-                    Phone Number:
-                    <input type="tel" name="Phone" size="30" maxlength="12" pattern="[0-9]{10}" required
-                        placeholder="Please enter your phone number" /> <br>
-                    <!-- phone input that ensure the phone number is correct format and length -->
+                    <!-- company name input (not required) --> <br>
                     Email:
-                    <input type="email" name="Email" size="30" maxlength="100" required
-                        placeholder="Please enter your phone number" /> <br>
-                    <!-- phone input that ensure the phone number is correct format and length -->
+                    <input type="text" id="email" name="email" size="30" maxlength="50" required
+                        placeholder="example@email.com" /><br> <br>
 
+                    Phone Number:
+                    <input type="tel" id="phone" name="phone" size="30" placeholder="Please enter your phone number" />
+                    <br><br>
+                    <!-- phone input that ensure the phone number is correct format and length -->
                     Subject:
-                    <input type="text" name="Subject" size="30" maxlength="50"
-                        placeholder="Please briefly summarise your query" /><br>
+                    <input type="text" id="subject" name="subject" size="30" maxlength="50" required
+                        placeholder="Please briefly summarise your query" /><br> <br>
                     <!-- subject input -->
 
                     Query:
-                    <textarea name="comment" rows="5" cols="40" required placeholder="How can we help?"> </textarea>
+                    <textarea id="comment" name="comment" rows="5" cols="40" required
+                        placeholder="How can we help?"> </textarea>
                     <br>
                     <!-- actual query input -->
 
                     <Button type="submit"> Submit </Button>
                     <Button type="reset"> Clear </Button>
                     <!-- buttons to submit form/clear form -->
+                </form>
+            </p>
         </section>
     </main>
-    </form>
-
-    </p>
 
 </body>
 
